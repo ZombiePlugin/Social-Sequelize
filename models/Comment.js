@@ -1,5 +1,8 @@
+const { db, DataTypes } = require("../db/connection");
 
-let Comment;
-
+let Comment = db.define("Comment", {
+  body: DataTypes.STRING,
+  createdAt: DataTypes.STRING,
+});
 
 module.exports = Comment;
